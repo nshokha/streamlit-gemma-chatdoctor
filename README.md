@@ -27,6 +27,7 @@ cd medical-chat-gemma
 pip install -r requirements.txt
 streamlit run app.py
 
+```
 English:
 
 # 🩺 Medical Chat with Gemma (Streamlit)
