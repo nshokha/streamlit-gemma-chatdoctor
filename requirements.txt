@@ -1,11 +1,7 @@
-🛠️ Используемые технологии:
-
-Python
-
-Streamlit
-
-HuggingFace Transformers
-
-model - Gemma-2-2b-it
+```txt
+streamlit
+transformers
+huggingface_hub
+torch
 
 Чтобы использовать модель, нужно ввести huggingface_token — его можно получить на сайте huggingface.co.
