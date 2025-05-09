@@ -7,3 +7,5 @@ Streamlit
 HuggingFace Transformers
 
 model - Gemma-2-2b-it
+
+Чтобы использовать модель, нужно ввести huggingface_token — его можно получить на сайте huggingface.co.
