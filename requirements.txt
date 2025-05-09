@@ -1,0 +1,9 @@
+🛠️ Используемые технологии:
+
+Python
+
+Streamlit
+
+HuggingFace Transformers
+
+model - Gemma-2-2b-it
