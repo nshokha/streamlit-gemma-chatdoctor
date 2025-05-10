@@ -23,9 +23,6 @@ def load_med_model():
 if 'chatdoctor' not in st.session_state:
     st.session_state['chatdoctor'] = None
 
-if 'tts' not in st.session_state:
-    st.session_state['tts'] = None
-
 st.set_page_config('Multi-functional AI', layout="wide", initial_sidebar_state="expanded")
 
 with st.sidebar:
@@ -57,7 +54,7 @@ if choices == "Chat Doctor":
                     try:
                         tokenizer = AutoTokenizer.from_pretrained("google/gemma-2-2b-it")
                         inputs = tokenizer(user_input, return_tensors="pt")
-                        response_ids = st.session_state['chatdoctor'].generate(
+                        response_ids = st.session_state['medical_model'].generate(
                             **inputs, max_length=100, num_return_sequences=1, temperature=0.7
                         )
                         response = tokenizer.decode(response_ids[0], skip_special_tokens=True)
@@ -65,7 +62,3 @@ if choices == "Chat Doctor":
                         st.write(response)
                     except Exception as e:
                         st.error(f"An error occurred while generating the response: {e}")
-
-
-
-
